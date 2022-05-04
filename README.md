@@ -1,3 +1,3 @@
-# axdelafuen.github.io
+# This is a simple website which is aim to make everyone happier
 
-[link](index.html)
+[axdelafuen.github.io](index.html)
