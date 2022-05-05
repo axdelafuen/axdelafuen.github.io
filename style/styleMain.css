@@ -10,8 +10,7 @@ body{
     border-style: hidden;
 }
 .home:after{
-    content: "\f015";
-    font-family: FontAwesome;
+    content: "🔙";
     font-size:150px;
 }
 .home:hover{

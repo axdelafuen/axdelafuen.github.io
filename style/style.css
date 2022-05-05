@@ -39,7 +39,7 @@ body{
   mask-border-width: 0;
   background-image: -moz-linear-gradient(left,#8860D0,#5AB9EA);
   text-decoration: none;
-  padding: 15px 35px;
+  padding: 15px 55px;
   overflow: hidden;
 }
 
@@ -48,8 +48,7 @@ body{
 }
 
 .effect.effect1:before {
-  content: "\f054";
-  font-family: FontAwesome;
+  content: "🔜";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,7 +59,7 @@ body{
   width: 30px;
   border-radius: 0 50% 50% 0;
   transform: scale(0,1);
-  padding: 2px 35px;
+  padding: 2px 45px;
   transform-origin: left center;
   transition: all 0.2s linear 0s;
 }
@@ -89,7 +88,7 @@ nav ul{
   list-style:none !important;
   transition: all 0.2s linear 0s;
   font-family: Cantarell;
-  padding:15px 30px;
+  padding:15px 40px;
   font-weight: bold;
   color:#5680E9;
   background-color:rgba(255, 255, 255, 0.609);
@@ -98,15 +97,14 @@ nav ul{
 
 
 .li:before{
-  content:"\f0c9";
-  font-family: FontAwesome;
+  content:"↘️";
   position:absolute;
   left: 0px;
   height: 100%;
   width: 30px;
   border-radius: 0 50% 50% 0;
   transform: scale(0,1);
-  padding: 5px 35px;
+  padding: 2px 40px;
   transform-origin: left center;
   transition: all 0.2s linear 0s;
 }
