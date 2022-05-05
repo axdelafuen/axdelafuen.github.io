@@ -29,7 +29,7 @@ body{
 }
 .work span{
     font-size: 42px;
-    font-family: Cantarell;
+    font-family: -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
     font-weight: bold;
     color: white;
 }
