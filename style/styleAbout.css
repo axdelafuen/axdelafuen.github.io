@@ -1,0 +1,16 @@
+.about{
+    align-self: center;
+    font-size: 42px;
+    font-family: Cantarell;
+    color: white;
+}
+
+.titleAbout{
+    font-size: 64px;
+    font-family: Cantarell;
+    color: white;
+}
+
+.divAbout{
+    margin: 15% 25%;
+}

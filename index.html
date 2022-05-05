@@ -4,16 +4,53 @@
         <meta charset="utf-8" />
         <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
         <title>FuckFrontEnd</title>
-        <link rel="stylesheet" href="./src/style.css" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.css' integrity='sha512-WrHplq3TYPEkwmx3iOWybuK9tQ4oq6Qxff1aM48V2RI4CHPU3zBXebikfBsSf+/pMwc6vNUaMQLtwG7KUoP+kA==' crossorigin='anonymous'/>
+        <link rel="stylesheet" href="../style/app.css">
     </head>
 
     <body>
         <img id="Img2" src="./img/3d-form3.png" alt="Probleme">
         <img id="Img1" src="./img/3d-form2.png" alt="Probleme">
         <a id="mainDiv"href="./src/main.html"> 
-            <button id="mainButton">
+            <button class="effect effect1" >
                 Acess to website...
             </button>
         </a> 
+
+           <nav>
+				<ul>
+					<li class="li"><a class="liBorder">Hi guys, we've a gift for you ! </a>
+				    	<ul>
+							<li><a href="https://github.com/axdelafuen"> My GitHub </a></li>
+							<li><a href="https://gitlab.iut-clermont.uca.fr/axdelafuen"> My GitLab </a></li>
+							<li><a href="https://portfolio.iut.uca.fr/karuta/karuta/htm/karuta.htm"> My portfolio </a></li>
+							<li><a href="https://lsdeia.github.io/"> Cactuss </a></li>
+							<li><a href="./src/about.html"> About... </a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav> 
+
+        <div class=weatherr>   
+            <img class = "background", src="../img/fondm.gif"> 
+            <div class="wweather">
+                <section id="app">
+                    <h1>
+                        <span id="ville"></span>
+                        <span class="tooltip">Changer de ville ?</span>
+                    </h1>
+        
+                    <i class=""></i>
+            
+                    <h2> 
+                        <span id="temperature"></span> C° (<span id="conditions"></span>)
+                    </h2>
+        
+                </section>
+            </div>
+        </div>  
+        <script src="../script/app.js"></script>
+
     </body>
 </html> 

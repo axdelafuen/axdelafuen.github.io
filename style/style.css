@@ -1,0 +1,138 @@
+body{
+    background-image: url(../img/background.jpg);
+    overflow: hidden;
+}
+
+#Img1{
+    z-index: -1;
+    position: absolute;
+    bottom: -20px;
+    right:-100px;
+    rotate: 180deg;
+    width: 40%;
+}
+
+#Img2{
+    z-index: -1;
+    position: absolute;
+    top: -250px;
+    left: -40px;
+    width: 50%;
+}
+
+#mainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+.effect {
+  text-decoration: none;
+  position: absolute;
+  top: 40%;
+  font-size: 44px;
+  font-weight: bold;
+  color:white ;
+  border-radius: 50px;
+  border-style: hidden;
+  mask-border-width: 0;
+  background-image: -moz-linear-gradient(left,#8860D0,#5AB9EA);
+  text-decoration: none;
+  padding: 15px 35px;
+  overflow: hidden;
+}
+
+.effect.effect1 {
+  transition: all 0.2s linear 0s;
+}
+
+.effect.effect1:before {
+  content: "\f054";
+  font-family: FontAwesome;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  height: 100%;
+  width: 30px;
+  border-radius: 0 50% 50% 0;
+  transform: scale(0,1);
+  padding: 2px 35px;
+  transform-origin: left center;
+  transition: all 0.2s linear 0s;
+}
+
+.effect.effect1:hover {
+  text-indent: 30px;
+  cursor: pointer;
+}
+
+.effect.effect1:hover:before {
+  transform: scale(1,1);
+  text-indent: 0;
+}
+
+nav{
+  display: flex;
+}
+
+nav ul{
+  padding:15px 0px;
+}
+
+.li{
+  display:absolute;
+  font-size: 45px;
+  list-style:none !important;
+  transition: all 0.2s linear 0s;
+  font-family: Cantarell;
+  padding:15px 30px;
+  font-weight: bold;
+  color:#5680E9;
+  background-color:rgba(255, 255, 255, 0.609);
+  border-radius: 50px;
+}
+
+
+.li:before{
+  content:"\f0c9";
+  font-family: FontAwesome;
+  position:absolute;
+  left: 0px;
+  height: 100%;
+  width: 30px;
+  border-radius: 0 50% 50% 0;
+  transform: scale(0,1);
+  padding: 5px 35px;
+  transform-origin: left center;
+  transition: all 0.2s linear 0s;
+}
+
+.li:hover{
+  cursor: pointer;
+  text-indent: 50px;
+  cursor: pointer;
+}
+
+.li:hover ul{
+  display: list-item !important;
+  list-style: none !important;
+}
+
+.li:hover:before{
+  transform: scale(1,1);
+  text-indent: 0;
+}
+
+.li ul { 
+	display:none; 
+} 
+
+.li ul li { 
+  font-size: 34px;
+  text-decoration: none;
+  list-style:none !important;
+}
