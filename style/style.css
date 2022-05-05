@@ -1,3 +1,9 @@
+@font-face {
+ font-family: "Cantarell";
+ src: url("../fonts/Cantarell-VF.otf") format("otf"),
+}
+
+
 body{
     background-image: url(../img/background.jpg);
     overflow: hidden;
