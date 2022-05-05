@@ -1,0 +1,42 @@
+body{
+    background-image: url(../img/background.jpg);
+    overflow: hidden;
+}
+
+#Img1{
+    z-index: 0;
+    position: absolute;
+    bottom: -20px;
+    right:-100px;
+    rotate: 180deg;
+    width: 40%;
+}
+
+#Img2{
+    z-index: 0;
+    position: absolute;
+    top: -250px;
+    left: -40px;
+    width: 50%;
+}
+
+#mainButton{
+    position: absolute;
+    top: 40%;
+    font-size: 44px;
+    font-weight: bold;
+    color:white ;
+    border-radius: 50px;
+    border-style: hidden;
+    mask-border-width: 0;
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-image: -moz-linear-gradient(left,#8860D0,#5AB9EA);
+}
+
+#mainDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
