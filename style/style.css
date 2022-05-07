@@ -1,8 +1,3 @@
-body{
-    background-image: url(../img/backgroundS2.jpg);
-    overflow: hidden;
-}
-
 #mainDiv{
     display: flex;
     align-items: center;
