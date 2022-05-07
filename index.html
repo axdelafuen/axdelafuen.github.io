@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
-        <title>FuckFrontEnd</title>
+        <title> axdelafuen</title>
         <link rel="stylesheet" href="./style/style.css" />
         <link rel="stylesheet" href="./style/fond.css" />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.css' integrity='sha512-WrHplq3TYPEkwmx3iOWybuK9tQ4oq6Qxff1aM48V2RI4CHPU3zBXebikfBsSf+/pMwc6vNUaMQLtwG7KUoP+kA==' crossorigin='anonymous'/>
@@ -11,45 +11,44 @@
     </head>
 
     <body>
-        
-        <a id="mainDiv"href="./main/"> 
-            <button class="effect effect1" >
-                Acess to website...
-            </button>
-        </a> 
-
-           <nav>
-				<ul>
-					<li class="li"><a class="liBorder">Hi guys, we've a gift for you ! </a>
-				    	<ul>
-							<li><a href="https://github.com/axdelafuen"> My GitHub </a></li>
-							<li><a href="https://gitlab.iut-clermont.uca.fr/axdelafuen"> My GitLab </a></li>
-							<li><a href="https://lsdeia.github.io/"> Cactuss </a></li>
-							<li><a href="./about/"> About... </a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav> 
-
-        <div class=weatherr>   
-            <img class = "background", src="../img/fondm.gif"> 
-            <div class="wweather">
-                <section id="app">
-                    <h1>
-                        <span id="ville"></span>
-                        <span class="tooltip">Changer de ville ?</span>
-                    </h1>
-        
-                    <i class=""></i>
-            
-                    <h2> 
-                        <span id="temperature"></span> C° (<span id="conditions"></span>)
-                    </h2>
-        
-                </section>
+        <div class="conteneur">
+            <nav>
+                <ul>
+                    <li class="li"><a class="liBorder">Some cool links and pieces of informations </a>
+                        <ul>
+                            <li><a href="https://github.com/axdelafuen"> My GitHub </a></li>
+                            <li><a href="https://gitlab.iut-clermont.uca.fr/axdelafuen"> My GitLab </a></li>
+                            <li><a href="https://lsdeia.github.io/"> Cactuss </a></li>
+                            <li><a href="./about/"> About... </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="divButton">
+                <button class="effect effect1" >
+                    <a class="button" href="./main/">Acess to website... </a>
+                </button>
             </div>
-        </div>  
-        <script src="../script/app.js"></script>
-
+              
+            <div class=weatherr>   
+                <img class = "background", src="../img/fondm.gif"> 
+                <div class="wweather">
+                    <section id="app">
+                        <h1>
+                            <span id="ville"></span>
+                            <span class="tooltip">Changer de ville ?</span>
+                        </h1>
+            
+                        <i class=""></i>
+                
+                        <h2> 
+                            <span id="temperature"></span> C° (<span id="conditions"></span>)
+                        </h2>
+            
+                    </section>
+                </div>
+            </div>
+            <script src="../script/app.js"></script>
+        </div>
     </body>
 </html> 

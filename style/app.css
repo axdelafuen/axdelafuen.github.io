@@ -1,12 +1,8 @@
 .weatherr{
     text-align: center;
-    justify-content: center;
-    position: absolute;
     float: right;
     width: 250px;
     height: 250px;
-    top: 35px;
-    right : 40px;
 }
 
 

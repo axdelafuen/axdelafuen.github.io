@@ -6,9 +6,20 @@
 }
 
 .titleAbout{
+    width: min-content;
+    padding: 1% 2%;
+    border-radius: 50px;
+    border-style: solid;
     font-size: 64px;
     font-family: -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
     color: white;
+    background-image: -moz-linear-gradient(left,#8860D0,#5AB9EA);
+    transition: all 0.2s linear 0s;
+}
+.titleAbout:hover{
+    cursor: default;
+    background-image: -moz-linear-gradient(right,#8860D0,#5AB9EA);
+    color: black;
 }
 
 .divAbout{

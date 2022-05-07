@@ -1,14 +1,32 @@
-#mainDiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;    
+.conteneur{
+  position: fixed;
+  display: flex;
+  right: 0;
+  left: 0;
+  top:0;
+  bottom: 0;
+  padding: 1% 1%;
+  justify-content: space-between;
 }
 
+.button{
+  text-decoration: none;
+  color: white;
+  width: fit-content;
+}
+.divButton{
+  right: 0;
+  left: 0;
+  align-self: center;
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+}
 
 .effect {
-  text-decoration: none;
   position: absolute;
-  top: 40%;
+  align-self: center;
+  text-decoration: none;
   font-family:-apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
   font-size: 44px;
   font-weight: bold;
@@ -28,17 +46,13 @@
 
 .effect.effect1:before {
   content: "🔜";
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: absolute;
-  top: 0;
   left: -10px;
   height: 100%;
   width: 30px;
   border-radius: 0 50% 50% 0;
   transform: scale(0,1);
-  padding: 2px 45px;
+  padding: 2px 35px;
   transform-origin: left center;
   transition: all 0.2s linear 0s;
 }
@@ -62,35 +76,25 @@ nav ul{
 }
 
 .li{
-  display:absolute;
   font-size: 45px;
   list-style:none !important;
-  transition: all 0.2s linear 0s;
   font-family: -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell;
   padding:15px 40px;
   font-weight: bold;
-  color:#5680E9;
-  background-color:rgba(255, 255, 255, 0.609);
-  border-radius: 50px;
+  color: white;
+ /*  color:#5680E9;
+ */  background-image: -moz-linear-gradient(right,rgba(135, 96, 208, 0.555),rgba(90, 186, 234, 0.555));
+/*   background-color:rgba(255, 255, 255, 0.609);
+ */  border-radius: 50px;
+  transition: all 0.2s linear 0s;
 }
 
-
 .li:before{
-  content:"↘️";
-  position:absolute;
-  left: 0px;
-  height: 100%;
-  width: 30px;
-  border-radius: 0 50% 50% 0;
-  transform: scale(0,1);
-  padding: 2px 40px;
-  transform-origin: left center;
+  content:"➡️ ";
   transition: all 0.2s linear 0s;
 }
 
 .li:hover{
-  cursor: pointer;
-  text-indent: 50px;
   cursor: pointer;
 }
 
@@ -100,16 +104,16 @@ nav ul{
 }
 
 .li:hover:before{
-  transform: scale(1,1);
-  text-indent: 0;
+  content: "↘️ ️";
 }
 
 .li ul { 
 	display:none; 
 } 
 
-.li ul li { 
+.li ul li a { 
   font-size: 34px;
-  text-decoration: none;
   list-style:none !important;
+  font-weight: bolder;
+  color: white;
 }
