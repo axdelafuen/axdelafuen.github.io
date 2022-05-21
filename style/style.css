@@ -281,3 +281,9 @@ span{
     padding-top: 2%;
     font-size: 44px;
 }
+
+.content img{
+  margin-top: 2%;
+  border-radius: 50px;
+  width: 20%;
+}
