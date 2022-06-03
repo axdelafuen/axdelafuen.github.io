@@ -25,6 +25,9 @@ body{
   font-weight: bold;
   font-family: monospace;
 }
+#blink{
+  visibility: hidden;
+}
 .important{
   color: white;
 }
