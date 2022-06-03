@@ -1,0 +1,85 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin:0;
+  overflow: hidden;
+}
+
+#main{
+  display: flex;
+  background-color: black;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100vh;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: grey;
+  margin-left: 50px;
+  font-size: 64px;
+  font-weight: bold;
+  font-family: monospace;
+}
+.important{
+  color: white;
+}
+.important a{
+  text-decoration: none;
+  color: white;
+}
+
+#personnal{
+  margin-top: 0;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100vh;
+}
+.menu{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.rect{
+  margin:0;
+  height: 2px;
+  background-color: black;
+  left: 0;
+  right:0;
+}
+#personnal a{
+  text-decoration: none;
+  color: black;
+  font-size: 44px;
+  font-family: monospace;
+}
+#personnal a img{
+  width: 80px;
+}
+.me{
+  display: flex;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+}
+.meTitle{
+  margin-top: 50px;
+}
+.me h1{
+  font-size: 42px;
+  font-weight: bold;
+  font-family: monospace;
+}
+.me p{
+  width: 70%;
+  text-align: center;
+  font-family: monospace;
+  font-size: 26px;
+}
