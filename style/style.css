@@ -46,18 +46,15 @@ body{
   height: 100vh;
 }
 .menu{
+  padding-bottom: 20px;
   padding-top: 20px;
   display: flex;
+  align-items: baseline;
   justify-content: space-around;
 }
-.rect{
-  margin:0;
-  height: 2px;
-  background-color: black;
-  left: 0;
-  right:0;
-}
 #personnal a{
+  display: flex;
+  align-self: center;
   text-decoration: none;
   color: black;
   font-size: 44px;
