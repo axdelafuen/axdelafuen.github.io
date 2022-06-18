@@ -84,3 +84,9 @@ body{
   font-family: free-monospaced;
   font-size: 26px;
 }
+#persoProj{
+  text-decoration: underline;
+}
+#about{
+  text-decoration: underline;
+}
