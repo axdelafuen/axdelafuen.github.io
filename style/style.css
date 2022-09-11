@@ -8,7 +8,6 @@ body{
   margin:0;
   overflow: hidden;
 }
-
 #main{
   display: flex;
   background-color: black;
@@ -55,38 +54,49 @@ body{
 #personnal a{
   display: flex;
   align-self: center;
-  text-decoration: none;
-  color: black;
-  font-size: 44px;
-  font-family: free-monospaced;
 }
 #personnal a img{
   width: 80px;
 }
+.menu button{
+  border: none;
+  background: none;
+  font-family: free-monospaced-bold;
+  font-size: 250%;
+  cursor:pointer;
+}
+#me{
+  text-decoration: underline;
+}
 .me{
   display: flex;
-  height: 100vh;
-  background-color: black;
-  color: white;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+  background-color: black;
 }
-.meTitle{
-  margin-top: 50px;
-}
-.me h1{
-  font-size: 42px;
+#subTitle{
+  display: flex;
   font-family: free-monospaced-bold;
+  color: white;
+  font-size: 250%;
+  margin-top:1%;
 }
-.me p{
-  width: 70%;
+#text{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
   text-align: center;
   font-family: free-monospaced;
   font-size: 26px;
+  color: white;
 }
-#persoProj{
-  text-decoration: underline;
+#text a{
+  font-family: free-monospaced;
+  font-size: 26px;
+  color: white;
+  margin: 0.5%;
 }
-#about{
-  text-decoration: underline;
+#text span{
+  margin: 0.8%;
 }
