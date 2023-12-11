@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
-        <title> Portfolio - Axel</title>
-        <link rel="stylesheet" href="./style/style.css" />
-    </head>
-    <body>
-      <div id="main">
-        <div class="title">
-          <span class="important">
-                  &emsp;Hello World,
-          </span>
-            <span class="important">
-                &emsp;I'm
-                <a href="#personnal">Axel</a>
-                <span id="blink">|</span>
-            </span>
-        </div>
-      </div>
-      <div id="personnal">
-        <div class="menu">
-          <a href="#"> <img src="./img/code.png" alt=""> </a>
-          <button id="me" onclick="displayMe()"> <span>Who am I ?</span> </button>
-          <button id="about" onclick="displayAbout()"> <span>About</span> </button>
-        </div>
-        <div class="me">
-          <div id="subTitle">
-            <span>Axel DE LA FUENTE</span>
-          </div>
-          <p id=text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-          </p>
-        </div>
-      </div>
-      <script type="text/javascript" src="./script/script.js"></script>
-    </body>
+<head>
+	<meta charset="utf-8" />
+	<title>axdelafuen</title>
+	<link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+	<div class="main-container">
+		<nav>
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="./projects/">Projects</a></li>
+			</ul>
+		</nav>
+		<div class="content">
+
+			Hi 👋, I'm Axel<br><br>
+
+			French IT student.
+		</div>
+		<div class="links">
+			<div class="link">
+				<img src="./images/github.png" height="24">
+				<a href="https://github.com/axdelafuen">github</a>
+			</div>
+			<div class="link">
+				<img src="./images/codefirst.svg" height="24">
+				<a href="https://codefirst.iut.uca.fr/git/axel.de_la_fuente">codefirst</a>
+			</div>
+			<div class="link">
+				<img src="./images/fast-mail.svg" height="38">
+				<a href="mailto:axel.de_la_fuente@etu.uca.fr">mail</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<span class="lastModified"></span>
+	</div>
+	<script>
+		document.querySelector(".lastModified").innerHTML = "Last modified:" + document.lastModified
+	</script>
+</body>
 </html>
