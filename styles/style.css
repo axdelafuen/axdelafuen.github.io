@@ -64,3 +64,19 @@ nav ul li a {
 .lastModified{
 	font-size: 80%;
 }
+
+.project{
+	border-bottom: dashed;
+}
+
+.proj-link{
+	text-decoration: underline dotted;
+	color: black;
+}
+
+.tags span{
+	border-radius: 5px;
+	margin: 2px;
+	border: solid;
+	border-width: thin;
+}
