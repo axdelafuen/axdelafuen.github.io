@@ -7,16 +7,10 @@ trigger:
     - push
 
 steps:
-  #- name: code-analysis
-  #  image: aosapps/drone-sonar-plugin
-  #  settings: 
-  #    sonar_host:
-  #      from_secret: sonar_host
-  #    sonar_token:
-  #      from_secret: sonar_token
-
   - name: docker-build-and-push
     image: plugins/docker
+    commands:
+      - sed -i '1i\<base href="https://codefirst.iut.uca.fr/containers/axelde_la_fuente-portfolio/">' index.html
     settings:
        dockerfile: docker/Dockerfile
        context: .
