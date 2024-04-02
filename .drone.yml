@@ -7,15 +7,22 @@ trigger:
     - push
 
 steps:
+  - name: add-base-path
+    volumes:
+      - name: src
+        path: /src
+    command:
+      - sed -i '1i\<base href="https://codefirst.iut.uca.fr/containers/axelde_la_fuente-portfolio/">' index.html
+
   - name: docker-build-and-push
     image: plugins/docker
-    commands:
-      - sed -i '1i\<base href="https://codefirst.iut.uca.fr/containers/axelde_la_fuente-portfolio/">' index.html
+    volumes:
+      - name: src
+        path: /src     
     settings:
        dockerfile: docker/Dockerfile
        context: .
        registry: hub.codefirst.iut.uca.fr
-       mirror: https://proxy.iut.uca.fr:8443
        repo: hub.codefirst.iut.uca.fr/axel.de_la_fuente/portfolio
        username:
          from_secret: SECRET_REGISTRY_USERNAME
@@ -29,3 +36,4 @@ steps:
         CONTAINERNAME: portfolio
         COMMAND: create
         OVERWRITE: true
+    depends_on: [ docker-build-and-push ]
