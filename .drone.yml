@@ -7,19 +7,8 @@ trigger:
     - push
 
 steps:
-  - name: add-base-path
-    image: ubuntu:latest
-    volumes:
-      - name: src
-        path: /src
-    command:
-      - sed -i '1i\<base href="https://codefirst.iut.uca.fr/containers/axelde_la_fuente-portfolio/">' index.html
-
   - name: docker-build-and-push
-    image: plugins/docker
-    volumes:
-      - name: src
-        path: /src     
+    image: plugins/docker    
     settings:
        dockerfile: docker/Dockerfile
        context: .
@@ -29,7 +18,6 @@ steps:
          from_secret: SECRET_REGISTRY_USERNAME
        password:
          from_secret: SECRET_REGISTRY_PASSWORD
-    depends_on: [ add-base-path ]
 
   - name: deploy-container
     image: hub.codefirst.iut.uca.fr/thomas.bellembois/codefirst-dockerproxy-clientdrone:latest
