@@ -8,6 +8,7 @@ trigger:
 
 steps:
   - name: add-base-path
+    image: ubuntu:latest
     volumes:
       - name: src
         path: /src
@@ -28,6 +29,7 @@ steps:
          from_secret: SECRET_REGISTRY_USERNAME
        password:
          from_secret: SECRET_REGISTRY_PASSWORD
+    depends_on: [ add-base-path ]
 
   - name: deploy-container
     image: hub.codefirst.iut.uca.fr/thomas.bellembois/codefirst-dockerproxy-clientdrone:latest
