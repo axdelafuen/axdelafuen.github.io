@@ -1,13 +1,17 @@
 body {
 	margin: 2rem;
 	font-family: Montserrat, sans-serif;
+}
+
+.blocked-body{
 	overflow: hidden;
 }
 
 footer{
-	position: absolute; 
+	position: fixed; 
 	bottom: 0;
 	right: 0;
+	font-size: x-small;
 }
 
 .navbar{
@@ -52,5 +56,31 @@ footer{
 }
 
 .project-template{
-	
+	display: flex;
+	align-items: center;
+}
+
+.project-template p{
+	margin: 0;
+	margin-bottom: .75rem;
+	margin-top: .75rem;
+}
+
+.image-gallery {
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	padding: .5rem;
+}
+
+.image-gallery .img-four {
+	width: 15%;
+}
+
+.image-gallery .img-three {
+	width: 30%;
+}
+
+.image-gallery .img-two {
+	width: 40%;
 }
