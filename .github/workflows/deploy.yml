@@ -22,7 +22,7 @@ jobs:
       run: npm ci
       
     - name: Build Angular app
-      run: npm run build -- --base-href="/axdelafuen.github.io/"
+      run: npm run build --prerender -- --base-href="/axdelafuen.github.io/"
       
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
