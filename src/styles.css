@@ -1,0 +1,17 @@
+body {
+	margin: 2rem;
+	font-family: Montserrat, sans-serif;
+}
+
+footer {
+	position: fixed; 
+	bottom: 0;
+	right: 0;
+	font-size: x-small;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+}
