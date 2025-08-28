@@ -22,12 +22,12 @@ jobs:
       run: npm ci
       
     - name: Build Angular app
-      run: npm run build --prerender -- --base-href="/axdelafuen.github.io/"
+      run: npm run build -- --configuration=github-pages
       
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist/axdelafuen.github.io/browser
+        publish_dir: ./dist/axdelafuen.github.io
         publish_branch: gh-pages

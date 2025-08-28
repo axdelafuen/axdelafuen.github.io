@@ -80,7 +80,7 @@ h2 {
 
 @media (max-width: 768px) {
     .container {
-        padding: 20px 15px;
+        padding: 40px 15px;
     }
     
     .header h1 {

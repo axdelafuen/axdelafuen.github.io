@@ -1,4 +1,5 @@
-import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from "@angular/core";
+import { isPlatformBrowser } from "@angular/common";
 
 @Component({
     selector: 'app-navbar',
@@ -9,17 +10,23 @@ import { Component, OnInit, OnDestroy } from "@angular/core";
 export class NavbarComponent implements OnInit, OnDestroy {
     private scrollListener?: () => void;
 
+    constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
     ngOnInit() {
-        this.setupEventListeners();
+        if (isPlatformBrowser(this.platformId)) {
+            this.setupEventListeners();
+        }
     }
 
     ngOnDestroy() {
-        if (this.scrollListener) {
+        if (isPlatformBrowser(this.platformId) && this.scrollListener) {
             window.removeEventListener('scroll', this.scrollListener);
         }
     }
 
     toggleMobileMenu() {
+        if (!isPlatformBrowser(this.platformId)) return;
+        
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.querySelector('.nav-menu');
         
@@ -28,6 +35,8 @@ export class NavbarComponent implements OnInit, OnDestroy {
     }
 
     closeMobileMenu() {
+        if (!isPlatformBrowser(this.platformId)) return;
+        
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.querySelector('.nav-menu');
         
@@ -36,6 +45,8 @@ export class NavbarComponent implements OnInit, OnDestroy {
     }
 
     navigateTo(event: Event, href: string) {
+        if (!isPlatformBrowser(this.platformId)) return;
+        
         event.preventDefault();
         const target = document.querySelector(href);
         if (target) {
