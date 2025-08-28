@@ -1,0 +1,28 @@
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <a href="#top" (click)="navigateTo($event, '#top')">axdelafuen</a>
+        </div>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#projects" class="nav-link" (click)="navigateTo($event, '#projects')">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#skills" class="nav-link" (click)="navigateTo($event, '#skills')">Skills</a>
+            </li>
+            <li class="nav-item">
+                <a href="#experience" class="nav-link" (click)="navigateTo($event, '#experience')">Experiences</a>
+            </li>
+            <li class="nav-item">
+                <a href="#cv" class="nav-link" (click)="navigateTo($event, '#cv')">Download my CV</a>
+            </li>
+        </ul>
+        
+        <div class="hamburger" id="hamburger" (click)="toggleMobileMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+</nav>
