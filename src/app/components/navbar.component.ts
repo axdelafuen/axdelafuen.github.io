@@ -50,7 +50,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
         event.preventDefault();
         const target = document.querySelector(href);
         if (target) {
-            const offsetTop = href === '#top' ? 0 : target.getBoundingClientRect().top + window.pageYOffset - 80;
+            const offsetTop = href === '#top' ? 0 : target.getBoundingClientRect().top + window.pageYOffset;
             window.scrollTo({
                 top: offsetTop,
                 behavior: 'smooth'
