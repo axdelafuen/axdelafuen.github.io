@@ -65,7 +65,7 @@
                 }
               ],
               "outputHashing": "all",
-              "baseHref": "/axdelafuen.github.io/",
+              "baseHref": "/",
               "prerender": true,
               "ssr": false,
               "outputMode": "static"
