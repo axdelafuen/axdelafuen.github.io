@@ -1,21 +1,18 @@
 <nav class="navbar" id="navbar">
     <div class="nav-container">
         <div class="nav-logo">
-            <a href="/" (click)="navigateTo($event, '#top')">axdelafuen</a>
+            <a routerLink="/">axdelafuen</a>
         </div>
         
         <ul class="nav-menu">
             <li class="nav-item">
-                <a href="#projects" class="nav-link" (click)="navigateTo($event, '#projects')">Projects</a>
+                <a routerLink="/projects" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-                <a href="#skills" class="nav-link" (click)="navigateTo($event, '#skills')">Skills</a>
+                <a href="#experience" class="nav-link" >Experiences</a>
             </li>
             <li class="nav-item">
-                <a href="#experience" class="nav-link" (click)="navigateTo($event, '#experience')">Experiences</a>
-            </li>
-            <li class="nav-item">
-                <a href="#cv" class="nav-link" (click)="navigateTo($event, '#cv')">Download my CV</a>
+                <a href="#cv" class="nav-link">Download my CV</a>
             </li>
         </ul>
         

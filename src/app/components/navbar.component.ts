@@ -1,11 +1,13 @@
 import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from "@angular/core";
 import { isPlatformBrowser } from "@angular/common";
+import { RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-navbar',
     standalone: true,
+    imports: [RouterModule],
     templateUrl: './navbar.component.html',
-    styleUrls: ['./navbar.component.css']
+    styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit, OnDestroy {
     private scrollListener?: () => void;
@@ -13,9 +15,6 @@ export class NavbarComponent implements OnInit, OnDestroy {
     constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
     ngOnInit() {
-        if (isPlatformBrowser(this.platformId)) {
-            this.setupEventListeners();
-        }
     }
 
     ngOnDestroy() {
@@ -42,46 +41,5 @@ export class NavbarComponent implements OnInit, OnDestroy {
         
         hamburger?.classList.remove('active');
         navMenu?.classList.remove('active');
-    }
-
-    navigateTo(event: Event, href: string) {
-        if (!isPlatformBrowser(this.platformId)) return;
-        
-        event.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-            const offsetTop = href === '#top' ? 0 : target.getBoundingClientRect().top + window.pageYOffset;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
-        }
-        this.closeMobileMenu();
-    }
-
-    private setupEventListeners() {
-        this.scrollListener = () => {
-            let current = '';
-            const sections = document.querySelectorAll('section[id], [id="top"]');
-            
-            sections.forEach(section => {
-                const rect = section.getBoundingClientRect();
-                const sectionTop = rect.top + window.pageYOffset - 100;
-                const sectionHeight = rect.height;
-                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
-                    current = section.getAttribute('id') || '';
-                }
-            });
-            
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('active');
-                const href = link.getAttribute('href');
-                if (href === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        };
-
-        window.addEventListener('scroll', this.scrollListener);
     }
 }
