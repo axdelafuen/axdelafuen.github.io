@@ -10,6 +10,9 @@
         <div class="project-card">
           <div class="project-header">
             <h3>{{ project.title }}</h3>
+            @if (project.contributor) {
+              <span class="contributor-tag">Contributor</span>
+            }
           </div>
           
           <p class="project-description">{{ project.description }}</p>
@@ -17,8 +20,7 @@
           <div class="technologies">
             @for (tech of project.technologies; track tech) {
               <span class="tech-tag">{{ tech }}</span>
-            }
-            
+            }        
           </div>
           
           <div class="project-links">
@@ -29,6 +31,15 @@
             >
               GitHub
             </a>
+            @if (project.demoUrl) {
+            <a 
+              [href]="project.demoUrl" 
+              target="_blank" 
+              class="link-button"
+            >
+              Deployed project
+            </a>
+            }
           </div>
         </div>
       }
