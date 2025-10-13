@@ -22,6 +22,13 @@ export class ProjectsComponent {
       githubUrl: 'https://github.com/iftlp',
     },
     {
+      title: 'listening-app',
+      description: 'An interactive web app for practicing and improving listening skills.',
+      technologies: ['Angular'],
+      githubUrl: 'https://github.com/axdelafuen/listening-app',
+      demoUrl: 'https://axdelafuen.github.io/listening-app/',
+    },
+    {
       title: 'boardshelfd',
       description: 'Track, review, and discover board games.',
       technologies: ['Angular', 'C#', '.NET'],
@@ -44,6 +51,14 @@ export class ProjectsComponent {
       description: 'Application that allows you to craft immersive experiences from 360-degree images.',
       technologies: ['PHP', 'A-Frame', 'JS'],
       githubUrl: 'https://github.com/axdelafuen/archivr',
+    },
+    {
+      title: 'boks-boks-boks',
+      description: 'Solution for organizing and managing storage boxes.',
+      technologies: ['Svelte', 'Go'],
+      githubUrl: 'https://github.com/boks-boks-boks/boks-boks-boks',
+      demoUrl: 'https://boks.maettleship.com/',
+      contributor: true,
     }
   ];
 }
