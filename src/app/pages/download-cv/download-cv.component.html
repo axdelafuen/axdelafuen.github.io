@@ -4,8 +4,11 @@
   </header>
 
   <main class="main-content">
-      <p>English version</p>
-      <p>French version</p>
+      <div class="cv-buttons">
+        @for (cv of cvs; track cv) {
+          <a class="cv-btn" [href]="cv.file" download>{{ cv.label }}</a>
+        }
+      </div>
+      <p class="cv-updated">Last updated: <i>{{ lastUpdated }}</i></p>
   </main>
 </div>
-
