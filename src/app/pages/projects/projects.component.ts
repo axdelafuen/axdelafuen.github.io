@@ -22,6 +22,14 @@ export class ProjectsComponent {
       githubUrl: 'https://github.com/iftlp',
     },
     {
+      title: 'Perk',
+      description: 'Modern low level programming language designed for kernel development.',
+      technologies: ['OCaml', 'C'],
+      githubUrl: 'https://github.com/Alex23087/Perk',
+      demoUrl: 'https://perklang.org/',
+      contributor: true,
+    },
+    {
       title: 'listening-app',
       description: 'An interactive web app for practicing and improving listening skills.',
       technologies: ['Angular'],
