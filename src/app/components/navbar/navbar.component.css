@@ -101,6 +101,10 @@
     transform: rotate(-45deg) translate(6px, -6px);
 }
 
+.external-ref::after {
+    content:"\2197";
+}
+
 body {
     padding-top: 70px;
 }

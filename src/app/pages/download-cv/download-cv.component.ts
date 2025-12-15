@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class DownloadCvComponent {
   cvs = [
-    { label: 'English version', file: '/assets/pdf/CV_EN_OCT_2025_DE_LA_FUENTE_Axel.pdf' },
-    { label: 'French version', file: '/assets/pdf/CV_FR_OCT_2025_DE_LA_FUENTE_Axel.pdf' }
+    { label: 'English version', file: '/assets/pdf/CV_EN_NOV_2025_DE_LA_FUENTE_Axel.pdf' },
+    { label: 'French version', file: '/assets/pdf/CV_FR_NOV_2025_DE_LA_FUENTE_Axel.pdf' }
   ];
-  lastUpdated = 'October 2025';
+  lastUpdated = 'November 2025';
 }

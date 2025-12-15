@@ -4,7 +4,36 @@
   </header>
 
   <main class="main-content">
-    <p><i>wip</i></p>
+    <section class="experiences-list">
+      @for (experience of experiences; track experience) {
+        <div class="experience-card">
+          <div class="experience-header">
+            <div class="title-section">
+              <h3>{{ experience.title }}</h3>
+              <div class="company-info">
+                <span class="company">{{ experience.company }}</span>
+                <span class="separator">•</span>
+                <span class="location">{{ experience.location }}</span>
+              </div>
+            </div>
+            <div class="period-section">
+              <span class="period">{{ experience.period }}</span>
+              @if (experience.current) {
+                <span class="current-tag">Current</span>
+              }
+            </div>
+          </div>
+          
+          <p class="experience-description">{{ experience.description }}</p>
+          
+          <div class="technologies">
+            @for (tech of experience.technologies; track tech) {
+              <span class="tech-tag">{{ tech }}</span>
+            }
+          </div>
+        </div>
+      }
+    </section>
   </main>
 </div>
 
