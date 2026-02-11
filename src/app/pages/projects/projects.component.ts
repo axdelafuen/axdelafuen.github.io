@@ -10,6 +10,19 @@ import { CommonModule } from '@angular/common';
 export class ProjectsComponent {
   projects = [
     {
+      title: 'xale-db',
+      description: 'minimal SQL engine',
+      technologies: ['C++'],
+      githubUrl: 'https://github.com/axdelafuen/xale-db',
+      demoUrl: 'https://axdelafuen.github.io/xale-db/',
+    },
+    {
+      title: 'xale-logger',
+      description: 'lightweight, c++ logging library',
+      technologies: ['C++'],
+      githubUrl: 'https://github.com/axdelafuen/xale-logger',
+    },
+    {
       title: 'Maui.XaleToolkit',
       description: 'Trying to implement some natives features of Android / Windows / iOS in .NET MAUI.',
       technologies: ['C#', '.NET', 'MAUI'],
